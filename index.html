@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <section class="copy-text">
+      <span class="randomtxt">ATATATA</span>
+      <span class="copied">Copied</span>
+       <img  id="copy" src="./images/icon-copy.svg" alt="" style="cursor: pointer;">
+      </div>
+    </section>
+    <main>
+        <section class="length">
+            <div class="charLeng">
+                 <h3>Character Length</h3>
+            <span class="inpLength"></span>
+            </div>
+            <div class="slider">
+              <input class="sliderInp" id="inputRange" type="range" value="10" min="1" max="20">
+              <div class="progress"></div>
+            </div>
+        </section>
+         <section class="letter-Checkbox">
+           <div class="checkbox">
+            <input class="valueCheck"type="checkbox" value="UpperCase">
+             <label for="checkbox">Include UpperCase Letters</label>
+           </div>
+           <div class="checkbox">
+            <input  class="valueCheck"  type="checkbox" value="Lowercase">
+             <label for="checkbox"> Include Lowercase Letters</label>
+           </div>
+           <div class="checkbox">
+            <input   class="valueCheck" type="checkbox" value="Numbers">
+             <label for="checkbox"> Include Numbers</label>
+           </div>
+           <div class="checkbox">
+            <input  class="valueCheck"  type="checkbox" value="Symbols">
+             <label for="checkbox">Include Symbols</label>
+           </div>
+         </section>
+         <section class="strength-check">
+            <Span class="str">STRENGTH</Span>
+            <div class="pass-checker">
+                <h4>MEDIUM</h4>
+                <div class="progr"></div>
+                <div class="progr"></div>
+                <div class="progr"></div>
+                <div class="progr"></div>
+            </div>
+         </section>
+         <button>GENERATE<p><img src="./images/icon-arrow-right.svg" alt=""></p></button>
+    </main>
+  </body>
+</html>
