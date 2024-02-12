@@ -22,30 +22,38 @@ header {
   padding-top: 64px;
 }
 h1 {
+  width: 173px;
+  height: 21px;
   font-size: 16px;
   text-align: center;
   color: #817d92;
 }
 
-.copy-text {
+.dashboard {
   margin-top: 16px;
-  padding: 17px 15.5px 15px 16px;
   width: 343px;
   height: 64px;
   background-color: #24232c;
+  align-items: center;
+}
+.copy-text {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 17px 15.5px 15px 16px;
+}
+.copy-text div {
+  display: flex;
+  gap: 5px;
 }
 .randomtxt {
+  text-align: left;
   width: 144px;
   height: 32px;
   color: #e6e5ea;
 }
 .copied {
   display: none;
-  padding-left: 25px;
-
   font-size: 18px;
   color: #a4ffaf;
 }
@@ -64,7 +72,7 @@ main {
   padding: 21px 16px;
   display: flex;
   flex-direction: column;
-  align-items: c;
+  align-items: center;
 }
 .charLeng {
   display: flex;
@@ -115,7 +123,7 @@ h3 {
   position: absolute;
   top: 9px;
   left: 1px;
-  width: 5%;
+  width: 50%;
   height: 8px;
   border-radius: 5px;
   background: #000;
@@ -205,6 +213,70 @@ button {
   background-color: #a4ffaf;
   text-align: center;
 }
-button p {
+
+button:hover {
+  cursor: pointer;
+  border: solid 2px #a4ffaf;
+  background: #24232c;
+  color: #a4ffaf;
+}
+
+.buttp {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    width: 260px;
+    height: 32px;
+    font-size: 24px;
+  }
+  .dashboard {
+    width: 540px;
+    height: 80px;
+  }
+  .copy-text {
+  }
+  .randomtxt {
+    text-align: left;
+    width: 192px;
+    height: 42px;
+    font-size: 32px;
+  }
+  main {
+    width: 540px;
+  }
+  h3 {
+    font-size: 18px;
+    width: 173px;
+    height: 24px;
+  }
+  .charLeng {
+    width: 476px;
+  }
+  .slider {
+    width: 476px;
+  }
+  .letter-Checkbox {
+    padding-right: 170px;
+    gap: 20px;
+  }
+  label {
+    width: 270px;
+  }
+  .strength-check {
+    width: 476px;
+    height: 72px;
+  }
+  .str {
+    width: 87px;
+    height: 24px;
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  button {
+    width: 476px;
+  }
 }

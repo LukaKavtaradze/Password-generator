@@ -17,52 +17,69 @@
     <header>
       <h1>Password Generator</h1>
     </header>
-    <section class="copy-text">
+      <div class="dashboard">
+         <section class="copy-text">
       <span class="randomtxt">ATATATA</span>
-      <span class="copied">Copied</span>
-       <img  id="copy" src="./images/icon-copy.svg" alt="" style="cursor: pointer;">
+      <div>
+        <span class="copied">Copied</span>
+        <img
+          id="copy"
+          src="./images/icon-copy.svg"
+          alt=""
+          style="cursor: pointer"
+        />
       </div>
     </section>
+      </div>
+   
     <main>
-        <section class="length">
-            <div class="charLeng">
-                 <h3>Character Length</h3>
-            <span class="inpLength"></span>
-            </div>
-            <div class="slider">
-              <input class="sliderInp" id="inputRange" type="range" value="10" min="1" max="20">
-              <div class="progress"></div>
-            </div>
-        </section>
-         <section class="letter-Checkbox">
-           <div class="checkbox">
-            <input class="valueCheck"type="checkbox" value="UpperCase">
-             <label for="checkbox">Include UpperCase Letters</label>
-           </div>
-           <div class="checkbox">
-            <input  class="valueCheck"  type="checkbox" value="Lowercase">
-             <label for="checkbox"> Include Lowercase Letters</label>
-           </div>
-           <div class="checkbox">
-            <input   class="valueCheck" type="checkbox" value="Numbers">
-             <label for="checkbox"> Include Numbers</label>
-           </div>
-           <div class="checkbox">
-            <input  class="valueCheck"  type="checkbox" value="Symbols">
-             <label for="checkbox">Include Symbols</label>
-           </div>
-         </section>
-         <section class="strength-check">
-            <Span class="str">STRENGTH</Span>
-            <div class="pass-checker">
-                <h4>MEDIUM</h4>
-                <div class="progr"></div>
-                <div class="progr"></div>
-                <div class="progr"></div>
-                <div class="progr"></div>
-            </div>
-         </section>
-         <button>GENERATE<p><img src="./images/icon-arrow-right.svg" alt=""></p></button>
+      <section class="length">
+        <div class="charLeng">
+          <h3>Character Length</h3>
+          <span class="inpLength"></span>
+        </div>
+        <div class="slider">
+          <input
+            class="sliderInp"
+            id="inputRange"
+            type="range"
+            min="0"
+            max="20"
+          />
+          <div class="progress"></div>
+        </div>
+      </section>
+      <section class="letter-Checkbox">
+        <div class="checkbox">
+          <input type="checkbox" id="UpperCase" />
+          <label for="checkbox">Include UpperCase Letters</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="Lowercase" />
+          <label for="checkbox"> Include Lowercase Letters</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="Numbers" />
+          <label for="checkbox"> Include Numbers</label>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="Symbols" />
+          <label for="checkbox">Include Symbols</label>
+        </div>
+      </section>
+      <section class="strength-check">
+        <span class="str">STRENGTH</span>
+        <div class="pass-checker">
+          <h4 id="passLevel"></h4>
+          <div id="progr1" class="progr"></div>
+          <div id="progr2" class="progr"></div>
+          <div id="progr3" class="progr"></div>
+          <div id="progr4" class="progr"></div>
+        </div>
+      </section>
+      <button>
+        GENERATE<img src="./images/icon-arrow-right.svg" alt="" />
+      </button>
     </main>
   </body>
 </html>
