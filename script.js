@@ -89,6 +89,8 @@ function GeneratePassword() {
     progr1.style.border = "none";
     progr3.style.border = " solid 2px #e6e5ea";
     progr3.style.background = "none";
+    progr4.style.border = " solid 2px #e6e5ea";
+    progr4.style.background = "none";
   }
   if (count === 3) {
     passLevel.textContent = "MEDIUM";
